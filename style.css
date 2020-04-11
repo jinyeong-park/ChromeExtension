@@ -1,5 +1,22 @@
 html, body {
-    height:100%;
+    height:100%;      /* 100%: 화면 꽉 차게
+}
+body {
+    background-repeat: no-repeat;
+    background-size: cover;   /* set entire image in the screen */
+    background-position: 50% 50%;
+    margin:0;
+    font-family: sans-serif;
+
+}
+
+.overlay {
+    width:100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);  /*0.2 : a little darker */
+    display: flex;
+    justify-content: center;    /* 글자 양쪽 정렬 */
+    align-items: center;        /* 글자 상하 정렬 */
 }
 
 h1 {
