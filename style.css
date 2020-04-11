@@ -1,5 +1,5 @@
 html, body {
-    height:100%;      /* 100%: 화면 꽉 차게
+    height:100%;      /* 100%: 화면 꽉 차게 */
 }
 body {
     background-repeat: no-repeat;
@@ -17,14 +17,38 @@ body {
     display: flex;
     justify-content: center;    /* 글자 양쪽 정렬 */
     align-items: center;        /* 글자 상하 정렬 */
+    color:#fff;
+    /**** 글자 상하로 내림 :  flex-direction **/
+    flex-direction: column;
+}
+.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size:25px;
+    display: flex;    /*inline(한줄로) 만듦 */
+    padding:20px;
+    color:rgba(255, 255, 255, 0.5)
+
 }
 
-h1 {
-    color:#fff;
-    font-size:100px;
+.top .left {
+    flex: 1 0 auto;
+    text-align: left;
 }
 
-h2 {
-    color:#fff;
-    font-size:90px;
+.top .right {
+    flex: 1 1 auto;
+    text-align: right;
+}
+.time {
+    font-size: 200px;
+    margin:0;
+    font-weight:400;
+}
+
+.greeting{
+    font-size:80px;
+    font-weight: 400;
 }
